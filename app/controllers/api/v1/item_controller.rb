@@ -39,11 +39,7 @@ class Api::V1::ItemController < ApiController
 
     private 
     def set_user
-        begin
-            @user = User.find(params[:user_id])
-        rescue => exception
-            error_not_found
-        end
+        @user = current_user
     end
 
     def set_list
