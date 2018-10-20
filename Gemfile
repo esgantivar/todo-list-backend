@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'knock', '~> 2.1', '>= 2.1.1'
 gem 'pg', '~> 1.1', '>= 1.1.3'
+gem 'rack-cors', '~> 1.0', '>= 1.0.2'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
