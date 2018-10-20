@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     post 'auth' => 'user_token#create'
     namespace :v1 do
       resources :user, only: [:show, :create] 
-      resources :list do
-        resources :item
+      resources :list, except: [:new, :edit] do
+        resources :item, except: [:new, :edir]
       end
     end
   end
